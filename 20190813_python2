@@ -1,0 +1,320 @@
+D:\Python_KJH\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2019.2\helpers\pydev\pydevconsole.py" --mode=client --port=49922
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['D:\\Python_KJH', 'D:/Python_KJH'])
+PyDev console: starting.
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+a=[1,2,3]
+str(a[2])+'hi'
+'3hi'
+del a[2]
+a
+[1, 2]
+a.append(3)
+a
+[1, 2, 3]
+a.append([2,3,4])
+a
+[1, 2, 3, [2, 3, 4]]
+a.insert(3,4)
+a
+[1, 2, 3, 4, [2, 3, 4]]
+a.extend(5,6)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: extend() takes exactly one argument (2 given)
+a.extend([5,6])
+a
+[1, 2, 3, 4, [2, 3, 4], 5, 6]
+a.pop()
+6
+a
+[1, 2, 3, 4, [2, 3, 4], 5]
+a.pop(a[4])
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'list' object cannot be interpreted as an integer
+a.pop(4)
+[2, 3, 4]
+a
+[1, 2, 3, 4, 5]
+a.reverse()
+a
+[5, 4, 3, 2, 1]
+a.sort()
+a
+[1, 2, 3, 4, 5]
+a.remove()
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: remove() takes exactly one argument (0 given)
+a.remove(4)
+a
+[1, 2, 3, 5]
+del a[2]
+a
+[1, 2, 5]
+a.remove(5)
+    
+    a
+  File "<input>", line 2
+    a
+    ^
+IndentationError: unexpected indent
+a
+[1, 2]
+a.remove(0)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+a.index(2)
+1
+a.index(1)
+0
+a.index(0)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: 0 is not in list
+a.remove(a)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+a.remove()
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: remove() takes exactly one argument (0 given)
+a
+[1, 2]
+a.remove(1,2)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: remove() takes exactly one argument (2 given)
+s1 = set([1,2,3])
+s1 = set([1,2,3])
+s1
+{1, 2, 3}
+s2 = set("Hello")
+se
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'se' is not defined
+s2
+{'H', 'l', 'o', 'e'}
+s2
+{'H', 'l', 'o', 'e'}
+s1 = set([1,2,3])
+l1 = list(s1)
+li
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'li' is not defined
+l1
+[1, 2, 3]
+l1[0]
+1
+s1 = set([1,2,3,4,5,6])
+s2 = set([4,5,6,7,8,9])
+s1 & s2
+{4, 5, 6}
+s1.intersection(s2)
+{4, 5, 6}
+s2.intersection(s1)
+{4, 5, 6}
+s1 | s2
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+s1.union(s2)
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+s2.union(s1)
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+s1 - s2
+{1, 2, 3}
+s1.difference(s2)
+{1, 2, 3}
+s1.difference(s2)
+{1, 2, 3}
+s2.difference(s1)
+{8, 9, 7}
+s1 = set([1,2,3])
+s1.add(4)
+s1
+{1, 2, 3, 4}
+s1 = set([1,2,3])
+s1.add([4,5,6])
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: unhashable type: 'list'
+s1.update([4,5,6])
+s1
+{1, 2, 3, 4, 5, 6}
+s1 = set([1,2,3])
+s1.remove(2)
+s1
+{1, 3}
+list(s1)
+[1, 3]
+s1
+{1, 3}
+s1.remove(3)
+s1.remove(1)
+s1
+set()
+a = True
+b = False
+type(a)
+<class 'bool'>
+type(b)
+<class 'bool'>
+1 == 1
+True
+2 > 1
+True
+2 < 1
+False
+a = [1,2,3,4]
+while a:
+    print(a.pop())
+    
+4
+3
+2
+1
+a
+[]
+if[2>1]:
+    print("참")
+else:
+    print("거짓")
+    
+참
+if[]:
+    print("True")
+else:
+    print("False")
+    
+False
+if[1>3]:
+    print("True")
+else:
+    print("False")
+    
+True
+if[]:
+    print("True")
+else:
+    print("False")
+    
+False
+if[1,2,3]:
+    print("True")
+else:
+    print("False")
+    
+True
+if 2>1 :
+    print("True")
+else:
+    print("False")
+    
+True
+if 1>2 :
+    print("True")
+else :
+    print("False")
+    
+False
+bool('python')
+True
+bool("")
+False
+bool([1,2,3])
+True
+bool([])
+False
+bool(0)
+False
+bool(1)
+True
+a=1
+a=2
+a = 1
+b = "python"
+c = [1,2,3]
+a
+1
+b
+'python'
+c
+[1, 2, 3]
+a = [1,2,3]
+id(a)
+62209400
+a = [1,2,3]
+b = a
+b
+[1, 2, 3]
+id(a)
+65924712
+id(b)
+65924712
+a is b
+True
+a[1] = 4
+a
+[1, 4, 3]
+b
+[1, 4, 3]
+a = [1,2,3]
+b = a[:]
+a
+[1, 2, 3]
+b
+[1, 2, 3]
+a[1] = 4
+a
+[1, 4, 3]
+b
+[1, 2, 3]
+id(a)
+13586024
+id(b)
+13586304
+from copy import copy
+b = copy(a)
+a
+[1, 4, 3]
+b
+[1, 4, 3]
+b is a
+False
+a=1
+b=2
+a is b
+False
+if a is b :
+    print("T")
+else:
+    print("F")
+    
+F
+a, b = ('python', 'life')
+a
+'python'
+b
+'life'
+(a, b) = 'python', 'life'
+[a, b] = ['python', 'life']
+a
+'python'
+b
+'life'
+a = b = 'python'
+a
+'python'
+b
+'python'
+a = 3
+b = 5
+a, b = b, a
+a
+5
+b
+3
