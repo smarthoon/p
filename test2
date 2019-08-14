@@ -1,0 +1,108 @@
+D:\Python_KJH\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2019.2\helpers\pydev\pydevconsole.py" --mode=client --port=55620
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['D:\\Python_KJH', 'D:/Python_KJH'])
+PyDev console: starting.
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+prices = []
+prices
+[]
+temps = [32.0, 212.0, 0.0, 81.6, 100.0, 45.3]
+temps
+[32.0, 212.0, 0.0, 81.6, 100.0, 45.3]
+words = ['Toyota','RAV4', 2.2, 60807]
+found = []
+len(found)
+0
+found.append('a')
+found.append('e')
+found.append('i')
+found.append('o')
+found
+['a', 'e', 'i', 'o']
+len(found)
+4
+if 'u' not in found
+    found.append('u')
+    
+  File "<input>", line 1
+    if 'u' not in found
+                      ^
+SyntaxError: invalid syntax
+if 'u' not in found:
+    found.append('u')
+    
+found
+['a', 'e', 'i', 'o', 'u']
+if 'u' not in found:
+    found.append('u')
+    
+found
+['a', 'e', 'i', 'o', 'u']
+nums = [1,2,3,4]
+nums
+[1, 2, 3, 4]
+nums.remove(3)
+nums
+[1, 2, 4]
+nums.pop()
+4
+nums
+[1, 2]
+nums.pop()
+2
+nums
+[1]
+nums.pop(0)
+1
+nums
+[]
+nums.extend(2)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'int' object is not iterable
+nums.extend([2,3,4])
+nums
+[2, 3, 4]
+nums.extend([])
+nums
+[2, 3, 4]
+nums.insert(0,1)
+nums
+[1, 2, 3, 4]
+nums.insert(2,"two-and-a-half")
+nums
+[1, 2, 'two-and-a-half', 3, 4]
+person3 = { 'Name':'Ford Prefect,'}
+person3 = { 'Name':'Ford Prefect',
+            'Gender':'Male', 
+            'Occypation':'Researcher',
+            'Home Planet':'Betelgeuse Sever'}
+person3
+{'Name': 'Ford Prefect', 'Gender': 'Male', 'Occypation': 'Researcher', 'Home Planet': 'Betelgeuse Sever'}
+person3['Home Planet']
+'Betelgeuse Sever'
+person3['Name']
+'Ford Prefect'
+person3['Age'] = 33
+person3
+{'Name': 'Ford Prefect', 'Gender': 'Male', 'Occypation': 'Researcher', 'Home Planet': 'Betelgeuse Sever', 'Age': 33}
+found = {}
+found
+{}
+foundp['a'] = 0
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'foundp' is not defined
+found['a'] = 0
+found['e'] = 0
+found['i'] = 0
+found['o'] = 0
+found['u'] = 0
+found
+{'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+found['e'] = found['e'] + 1
+found
+{'a': 0, 'e': 1, 'i': 0, 'o': 0, 'u': 0}
+found['e'] += 1
+found
+{'a': 0, 'e': 2, 'i': 0, 'o': 0, 'u': 0}
